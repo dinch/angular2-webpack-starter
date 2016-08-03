@@ -4,7 +4,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <span (click)="toggleSidebar()" class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                Sidebar brand Lorem...
             </li>
             <li>
                 <a [routerLink]=" ['./'] ">
@@ -31,6 +31,11 @@
                     Map
                 </a>
             </li>
+            <li>
+                <a [routerLink]=" ['./map'] ">
+                    <img alt="Brand" class='ic_settings' src="assets/img/ic_settings.png"> Settings
+                </a>
+            </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -42,7 +47,8 @@
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#">
-                                <img alt="Brand" src="...">
+                                <span (click)="toggleSidebar()" class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                
                             </a>
                         </div>
 
@@ -63,45 +69,3 @@
 
 </div>
 <!-- /#wrapper -->
-
-
-<!--<nav>
-    <span>
-    <a [routerLink]=" ['./'] ">
-        Index
-    </a>
-    </span>
-    |
-    <span>
-    <a [routerLink]=" ['./home'] ">
-        Home
-    </a>
-    </span>
-    |
-    <span>
-    <a [routerLink]=" ['./detail'] ">
-        Detail
-    </a>
-    </span>
-    |
-    <span>
-    <a [routerLink]=" ['./about'] ">
-        Abouttt
-    </a>
-    </span>
-</nav>
-
-<main>
-    <router-outlet></router-outlet>
-</main>
-
-<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
-<footer>
-    <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
-    <div>
-    <a [href]="url">
-        <img [src]="angularclassLogo" width="25%">
-    </a>
-    </div>
-</footer>-->
