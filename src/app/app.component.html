@@ -1,0 +1,107 @@
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <span (click)="toggleSidebar()" class="glyphicon glyphicon-th" aria-hidden="true"></span>
+            </li>
+            <li>
+                <a [routerLink]=" ['./'] ">
+                    Index
+                </a>
+            </li>
+            <li>
+               <a [routerLink]=" ['./home'] ">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a [routerLink]=" ['./detail'] ">
+                    Detail
+                </a>
+            </li>
+            <li>
+                <a [routerLink]=" ['./about'] ">
+                    About
+                </a>
+            </li>
+            <li>
+                <a [routerLink]=" ['./map'] ">
+                    Map
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+                <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <img alt="Brand" src="...">
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse"> 
+                            <button type="button" class="btn btn-default navbar-btn">Sign in</button> 
+                            <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p> 
+                        </div>
+                    </div>
+                </nav>
+
+
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+
+<!--<nav>
+    <span>
+    <a [routerLink]=" ['./'] ">
+        Index
+    </a>
+    </span>
+    |
+    <span>
+    <a [routerLink]=" ['./home'] ">
+        Home
+    </a>
+    </span>
+    |
+    <span>
+    <a [routerLink]=" ['./detail'] ">
+        Detail
+    </a>
+    </span>
+    |
+    <span>
+    <a [routerLink]=" ['./about'] ">
+        Abouttt
+    </a>
+    </span>
+</nav>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+
+<footer>
+    <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
+    <div>
+    <a [href]="url">
+        <img [src]="angularclassLogo" width="25%">
+    </a>
+    </div>
+</footer>-->
